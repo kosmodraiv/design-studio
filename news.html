@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=PT+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="sweetalert2.min.css">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__main">
+                <div class="header_logo">
+                    <ul class="header__left">
+                        <li><a class="logo__text" href="./index.html">Logo</a></li>
+                    </ul>
+        
+                </div>
+
+                <div id="burg">
+                    <a>
+                        <span class="burg_span bar" id="top"></span>
+                        <span class="burg_span bar" id="bottom"></span>
+                        
+                    </a>
+                </div>
+                
+                <div class="bar-dekstop">
+                <nav class="header__menu">
+                    <ul class="menu__list">
+                        <li><a class="menu__name">Projects</a></li>
+                        <li><a class="menu__name">Abous us</a></li>
+                        <li><a class="menu__name" href="./news.html">Blog</a></li>
+                        <li><a class="menu__name" href="#contacts">Contacts</a></li>
+                    </ul>
+                </nav>
+                </div>
+
+        <div class="mobile-tab">
+            <nav class="header__mobile">
+                <ul>
+                    <li><a class="menu__name">Home</a></li>
+                    <li><a class="menu__name">Projects</a></li>
+                    <li><a class="menu__name">Abous us</a></li>
+                    <li><a class="menu__name" href="./news.html">Blog</a></li>
+                    <li><a class="menu__name" href="#contacts">Contacts</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+                <div class="menu__icons">
+                    <ul class="icons__list">
+                        <li><p>En</p></li>
+                        <li><p>Send Request</p></li>
+                    </ul>
+                </div>
+        
+            </div>
+        </div>
+    </header>
+
+    <section class="news__title">
+        <div class="container">
+            <div class="news__content">
+                <div class="news-left">
+                    <h1>Our latest news</h1>
+                </div>
+                <div class="news-right">
+                    <ul class="tabs__nav">
+                        <li data-tab="#tab-1" class="tabs__nav-btn tabs__text"><p>All</p></li>
+                        <li data-tab="#tab-2" class="tabs__nav-btn tabs__text"><p>Blog</p></li>
+                        <li data-tab="#tab-1" class="tabs__nav-btn tabs__text"><p>News</p></li>
+                        <li data-tab="#tab-2" class="tabs__nav-btn tabs__text"><p>Advise from the designer</p></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="news__main">
+    <div class="container">
+        <div class="tabs__content news__main-content">
+                        <div class="tabs__item animate__animated animate__fadeIn" id="tab-1">
+                    <div class="news__main-first">
+                        <ul>
+                            <li><div class="news__inf">
+                                <h1>5 smart tips for productive collaboration with the designer</h1>
+                                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel gravida urna. Donec blandit sapien eu diam ullamcorper euismod. Nam tempus pellentesque ligula ut aliquam.</h2>
+                                <div class="news__inf-button"><a href="./news_one.html">Discover more</a></div>
+                            </div></li>
+                            <li><a href="./news_one.html"><img src="./images/news/p1.jpg"></a></li>
+                        </ul>
+                    </div>
+                    <div class="news__main-second">
+                        <ul>
+                            <li><a href="./news_one.html"><img src="./images/news/p2.jpg"></a></li>
+                            <li><a href="./news_one.html"><img src="./images/news/p3.jpg"></a></li>
+                        </ul>
+                    </div>
+                    <div class="news__main-third">
+                        <ul>
+                            <li><div class="news__inf">
+                                <h1>5 smart tips for productive collaboration with the designer</h1>
+                                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel gravida urna. Donec blandit sapien eu diam ullamcorper euismod. Nam tempus pellentesque ligula ut aliquam.</h2>
+                                <div class="news__inf-button"><a href="./news_one.html">Discover more</a></div>
+                            </div></li>
+                            <li><a href="./news_one.html"><img src="./images/news/p1.jpg"></li></a>
+                        </ul>
+                    </div>
+                        </div>
+            <div class="tabs__item animate__animated animate__fadeIn" id="tab-2">
+                <div class="news__main-first">
+                    <ul>
+                        <li><div class="news__inf">
+                            <h1>5 smart tips for productive collaboration with the designer</h1>
+                            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel gravida urna. Donec blandit sapien eu diam ullamcorper euismod. Nam tempus pellentesque ligula ut aliquam.</h2>
+                            <div class="news__inf-button"><a href="./news_one.html">Discover more</a></div>
+                        </div></li>
+                        <li><a href="./news_one.html"><img src="./images/news/p2.jpg"></a></li>
+                    </ul>
+                </div>
+                <div class="news__main-second">
+                    <ul>
+                        <li><a href="./news_one.html"><img src="./images/news/p1.jpg"></a></li>
+                        <li><a href="./news_one.html"><img src="./images/news/p3.jpg"></a></li>
+                    </ul>
+                </div>
+                <div class="news__main-third">
+                    <ul>
+                        <li><div class="news__inf">
+                            <h1>5 smart tips for productive collaboration with the designer</h1>
+                            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel gravida urna. Donec blandit sapien eu diam ullamcorper euismod. Nam tempus pellentesque ligula ut aliquam.</h2>
+                            <div class="news__inf-button"><a href="./one-news.js">Discover more</a></div>
+                        </div></li>
+                        <li><a href="./news_one.html"><img src="./images/news/p1.jpg"></a></li>
+                    </ul>
+                </div>
+                    </div>
+    </div>
+    </div>
+    </section>
+
+    <footer>
+        <div class="container">
+        <div class="footer-img"><img src="./images/news/footer.jpg" alt=""></div>
+        <div class="footer__content">
+            <div class="footer__content-left">
+                <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h1>
+                <p>© Copyright 2018. All rights reserved</p>
+            </div>
+            <div class="footer__content-right">
+                <div class="footer-right__up">
+                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper eu mauris vitae posuere. Ut at luctus ligula. Nunc ante felis, aliquam.</h2>
+                <div class="form__group field">
+                    <input type="input" class="form__field" placeholder="Name" name="name" id='name' required />
+                    <label for="name" class="form__label">E-mail</label>
+                  </div>
+                </div>
+                <div class="footer-right__bottom">
+                    <p>Made with love in</p>
+                    <img src="./images/footer/image1.png" alt="">
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="sweetalert2.min.js"></script>
+    <script src="sweetalert2.all.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="./news.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
