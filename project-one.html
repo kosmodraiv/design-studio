@@ -9,11 +9,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=PT+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <link rel="stylesheet" href="sweetalert2.min.css">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
     <link
@@ -66,7 +61,7 @@
                 <div class="menu__icons">
                     <ul class="icons__list">
                         <li><p>En</p></li>
-                        <li><p>Send Request</p></li>
+                       <a id="demo-modal"><li><p>Send Request</p></li></a>
                     </ul>
                 </div>
         
@@ -74,90 +69,54 @@
         </div>
     </header>
 
-    <section class="news__title">
-        <div class="container">
-            <div class="news__content">
-                <div class="news-left">
-                    <h1>Our Projects</h1>
-                </div>
-                <div class="news-right">
-                    <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper eu mauris vitae posuere. Ut at luctus ligula. Nunc ante felis, aliquam eu enim sed, ornare pretium velit.</h2>
-                    <ul class="tabs__nav">
-                        <li data-tab="#tab-1" class="tabs__nav-btn tabs__text"><p>House</p></li>
-                        <li data-tab="#tab-2" class="tabs__nav-btn tabs__text"><p>Apartments</p></li>
-                        <li data-tab="#tab-1" class="tabs__nav-btn tabs__text"><p>Commerce</p></li>
-                        <li data-tab="#tab-2" class="tabs__nav-btn tabs__text"><p>Architecture</p></li>
-                    </ul>
-                </div>
-            </div>
+    <section class="project__one-head">
+        <h1>Residence by the lighthouse</h1>
+        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam<br> ullamcorper eu mauris vitae posuere. Ut at luctus ligula. Nunc<br> ante felis, aliquam eu enim sed, ornare pretium velit.</h2>
+        <ul>
+            <li>Lodz, Poland</li>
+            <li>16.10.2018</li>
+            <li>80 sq.m</li>
+        </ul>
+
+        <ol>
+            <li><p>Share:</p></li>
+            <li><img src="./images/project-one/share1.png" alt=""></li>
+            <li><img src="./images/project-one/share2.png" alt=""></li>
+            <li><img src="./images/project-one/share3.png" alt=""></li>
+            <li><img src="./images/project-one/share4.png" alt=""></li>
+        </ol>
+    </section>
+
+    <section class="project__one-text">
+        <h1>Donec et ipsum nec quam posuere maximus eu<br> in erat. Duis laoreet finibus consectetur. </h1>
+        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel gravida urna. Donec blandit sapien eu diam ullamcorper euismod. Nam tempus pellentesque ligula ut aliquam. Donec et ipsum nec quam posuere maximus eu in erat. Duis laoreet finibus consectetur. Nullam pulvinar ex sit amet leo gravida, sed mattis enim vehicula. Duis purus nisl, consectetur ut est non, placerat eleifend turpis. Duis auctor suscipit arcu. Aenean leo est, rutrum a eleifend eget, tempor nec urna. Proin finibus lobortis arcu dictum convallis. Ut fermentum eu magna vel laoreet. In lacus augue, malesuada id elit sit amet, varius imperdiet ex. Nullam blandit lobortis posuere:</h3>
+        <h2><a href="#">Discover more</a></h2>
+    </section>
+
+    <section class="project__one-photo">
+        <div class="project__one-photo__first">
+            <img src="./images/project-one/ph1.jpg" alt="">
+        </div>
+        <div  class="project__one-photo__second">
+            <ul>
+                <li><img src="./images/project-one/ph2.jpg" alt=""></li>
+                <li><img src="./images/project-one/ph3.jpg" alt=""></li>
+            </ul>
+        </div>
+        <div class="project__one-third">
+            <img src="./images/project-one/ph4.jpg" alt="">
+        </div>
+
+        <div class="project__one-btn">
+            <div class="project__one-btn__link">View more photo</div>
         </div>
     </section>
 
-
-    <section class="news__main">
-    <div class="container">
-        <div class="tabs__content news__main-content">
-                        <div class="tabs__item animate__animated animate__fadeIn" id="tab-1">
-                    <div class="project__main-first">
-                        <ul>
-                            <li><a href="./project-one.html"><img src="./images/projects/p1.jpg" alt=""></a></li>
-                            <li><a href="./project-one.html"><img src="./images/projects/p2.jpg"></a></li>
-                        </ul>
-                    </div>
-                    <div class="project__main-first-two">
-                        <ul>
-                            <li><a href="./project-one.html"><img src="./images/projects/p3.jpg" alt=""></a></li>
-                        </ul>
-                    </div>
-                    <div class="news__main-second">
-                        <ul>
-                            <li><a href="./project-one.html"><img src="./images/projects/p4.jpg"></a></li>
-                            <li><a href="./project-one.html"><img src="./images/projects/p5.jpg"></a></li>
-                        </ul>
-                    </div>
-                    <div class="news__main-third">
-                        <ul>
-                            <li><a href="./project-one.html"><img src="./images/projects/p6.jpg"></li></a>
-                        </ul>
-                    </div>
-                        </div>
-            <div class="tabs__item animate__animated animate__fadeIn" id="tab-2">
-                <div class="news__main-first">
-                    <ul>
-                        <li><div class="news__inf">
-                            <h1>5 smart tips for productive collaboration with the designer</h1>
-                            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel gravida urna. Donec blandit sapien eu diam ullamcorper euismod. Nam tempus pellentesque ligula ut aliquam.</h2>
-                            <div class="news__inf-button"><a href="./news_one.html">Discover more</a></div>
-                        </div></li>
-                        <li><a href="./project-one.html"><img src="./images/news/p2.jpg"></a></li>
-                    </ul>
-                </div>
-                <div class="news__main-second">
-                    <ul>
-                        <li><a href="./project-one.html"><img src="./images/news/p1.jpg"></a></li>
-                        <li><a href="./project-one.html"><img src="./images/news/p3.jpg"></a></li>
-                    </ul>
-                </div>
-                <div class="news__main-third">
-                    <ul>
-                        <li><div class="news__inf">
-                            <h1>5 smart tips for productive collaboration with the designer</h1>
-                            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel gravida urna. Donec blandit sapien eu diam ullamcorper euismod. Nam tempus pellentesque ligula ut aliquam.</h2>
-                            <div class="news__inf-button"><a href="./one-news.js">Discover more</a></div>
-                        </div></li>
-                        <li><a href="./project-one.html"><img src="./images/news/p1.jpg"></a></li>
-                    </ul>
-                </div>
-                    </div>
-    </div>
-    </div>
-    </section>
-
-    <section class="project-second">
+    <section class="project__one-second">
         <div class="container">
                 <div class="proj__request">
                     <div class="request-left">
-                        <p class="request-title-two">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        <p class="request-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
                         <ul>
                             <li><svg 
                                 xmlns="http://www.w3.org/2000/svg"
@@ -222,7 +181,7 @@
                         </ul>
                     </div>
                     <div class="request__right">
-                        <div class="request__text-main-two">
+                        <div class="request__text-main">
                             <ul>
                                 <li><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper eu mauris vitae posuere. Ut at luctus ligula. Nunc ante felis, aliquam eu enim sed, ornare pretium velit.</p></li>
                                 <li><p>Make request</p></li>
@@ -234,13 +193,17 @@
         </div>
     </section>
 
+    <section class="project__one-proposition">
+        <h2>Next project</h2>
+        <h1>Perfect proportions</h1>
+        <img src="./images/project-one/prop.jpg" alt="">
+    </section>
+
+    <script src="./preloader.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <script src="sweetalert2.min.js"></script>
-    <script src="sweetalert2.all.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-    <script src="./news.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

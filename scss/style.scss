@@ -3476,3 +3476,230 @@ height: 444px;
     margin: 128px 0px 210px 0px;
   }
 }
+
+//project-one
+
+.project__one-head{
+  display: flex;
+  flex-direction: column;
+  background-image: url(../images/project-one/head.jpg);
+  width: 100%;
+  height: 744px;
+  background-size: cover;
+  background-position: center;
+
+  h1{
+    padding-top: 262px;
+    padding-left: 197px;
+    font-family: 'PT Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: #FFFFFF;
+  }
+
+  h2{
+    padding-left: 197px;
+    font-family: 'PT Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 170.66%;
+    color: #FFFFFF;
+  }
+
+  ul{
+    padding-top: 60px;
+    padding-left: 197px;
+    display: flex;
+    flex-direction: row;
+
+    li{
+      margin-right: 32px;
+      font-family: 'PT Sans', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 13px;
+      letter-spacing: 0.06em;
+      color: #FFFFFF;
+      opacity: 0.7;
+    }
+
+    li:nth-child(3){
+      margin-right: 0;
+    }
+  }
+
+  ol{
+    display: flex;
+    flex-direction: row;
+    padding-top: 111px;
+
+    p{
+      font-family: 'PT Sans', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 170.66%;
+      color: #FFFFFF;
+      margin-right: 111px;
+    }
+
+    li{
+      img{
+        padding-top: 12px;
+        margin-right: 10px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.project__one-text{
+  padding-top: 140px;
+  padding-left: 197px;
+  display: flex;
+  flex-direction: column;
+
+  h1{
+    font-family: 'PT Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 22px;
+    color: #080808;
+  }
+
+  h3{
+    font-family: 'PT Sans', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 24px;
+    color: #080808;
+    opacity: 0.7;
+    width: 715px;
+  }
+
+  h2{
+    a{
+    margin-top: 25px;
+    font-family: 'PT Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 12px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #080808;
+  }
+  }
+}
+
+.project__one-photo{
+  padding-top: 140px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+  ul{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+
+    li{
+      margin-right: 8px;
+    }
+
+    li:nth-child(2){
+      margin-right: 0;
+    }
+  }
+}
+
+.project__one-btn{
+  padding-top: 97px;
+
+  .project__one-btn__link{
+    width: 204px;
+    height: 48px;
+    border: 1px solid #080808;
+    background: #FFFFFF;
+    text-align: center;
+    cursor: pointer;
+    padding-top: 17px;
+    color: #080808;
+    font-family: 'PT Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 13px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    transition: all 0.5s ease-out;
+
+    &:hover{
+      background: #444;
+      color: #fff;
+      transition: all 0.5s ease-out;
+    }
+}
+
+}
+
+.project__one-second{
+  margin-top: 140px;
+  background-color: #080808;
+  display: flex;
+  flex-direction: column;
+  transition: all 1s ease-out;
+}
+
+@media (max-width: 515px) {
+  .project__one-second{
+      padding-top: 800px;
+      transition: all 1s ease-out;
+  }
+}
+
+.project__one-proposition{
+  background-color: #080808;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 70vh;
+
+  h2{
+    font-family: 'PT Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #828282;
+  }
+
+  h1{
+    font-family: 'PT Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 44px;
+    color: #FFFFFF;
+  }
+
+  img{
+    margin-top: 62px;
+    transform: scale(1.1);
+    transition: all 0.5s ease-out;
+
+    &:hover{
+      transform: scale(1.2);
+      transition: all 0.5s ease-out;
+      cursor: pointer;
+    }
+  }
+}
