@@ -69,6 +69,95 @@
         </div>
     </header>
 
+    <section class="blure"></section>
+    <section class="blure-modal" id="blure-close"></section>
+    <div id="demo-modal" class="modal">
+        <div class="modal__content">
+            <div class="input__content">
+                <h1>Calculate the cost of work</h1>
+                <div class="input__content-main">
+                <div class="input__content-left">
+                <div class="form__grouptwo field">
+                    <input type="input" required="required" class="form__fieldtwo" placeholder="Name" name="name" id='name' required />
+                    <label for="name" class="form__labeltwo">Name</label>
+                </div>
+                <div class="form__grouptwo field">
+                    <input type="input" class="form__fieldtwo" placeholder="Name" name="name" id='name' required />
+                    <label for="name" class="form__labeltwo">Phone</label>
+                </div>
+                <div class="form__grouptwo field">
+                    <input type="input" class="form__fieldtwo" placeholder="Name" name="name" id='name' required />
+                    <label for="name" class="form__labeltwo">E-mail</label>
+                </div>
+                <div class="form__grouptwo field">
+                    <input type="input" class="form__fieldtwo" placeholder="Name" name="name" id='name' required />
+                    <label for="name" class="form__labeltwo">Your comment</label>
+                </div>
+                </div>
+
+                <div class="input__content-right">
+                    <div class="form__grouptwo field">
+                        <input type="input" class="form__fieldtwo" placeholder="Name" name="name" id='name' required />
+                        <label for="name" class="form__labeltwo">Last name</label>
+                    </div>
+                    <div class="form__grouptwo field">
+                        <input type="input" class="form__fieldtwo" placeholder="Name" name="name" id='name' required />
+                        <label for="name" class="form__labeltwo">Your city</label>
+                    </div>
+                    <div class="select__label">
+                        <label class="select" for="slct"><select id="slct" required="required">
+                            <option value="" disabled="disabled" selected="selected">Property type</option>
+                            <option value="#">One</option>
+                            <option value="#">Two</option>
+                        </select><svg>
+                            <use xlink:href="#select-arrow-down"></use>
+                        </svg></label><!-- SVG Sprites--><svg class="sprites">
+                        <symbol id="select-arrow-down" viewbox="0 0 10 6">
+                            <polyline points="1 1 5 5 9 1"></polyline>
+                        </symbol>
+                    </svg>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="modal__range">
+                <form action="/p/quote.php" method="GET">
+                    <h2 id="form-title">Area (m2)</h2>
+                    <div id="debt-amount-slider">
+                        <input type="radio" name="debt-amount" id="1" value="1" required>
+                        <label for="1" data-debt-amount="to50"></label>
+                        <input type="radio" name="debt-amount" id="2" value="2" required>
+                        <label for="2" data-debt-amount="50-100"></label>
+                        <input type="radio" name="debt-amount" id="3" value="3" required>
+                        <label for="3" data-debt-amount="150-250"></label>
+                        <input type="radio" name="debt-amount" id="4" value="4" required>
+                        <label for="4" data-debt-amount="250-400"></label>
+                        <input type="radio" name="debt-amount" id="5" value="5" required>
+                        <label for="5" data-debt-amount="400+"></label>
+                        <div id="debt-amount-pos"></div>
+                    </div>
+                </form>
+                <div class="attach__file-request">
+                <form action="#">
+                    <div class="input-file-container">  
+                      <input class="input-file" id="my-file" type="file">
+                      <label tabindex="0" for="my-file" class="input-file-trigger"><p>+</p></label>
+                      <div class="file__attach-title">
+                        <h1>Attach your file</h1>
+                        <p>File size not more than 10 MB</p>
+                      </div>
+                    </div>
+                    <p class="file-return"></p>
+                </form>
+                <button class="modal__submit-btn" type="submit" onClick="window.location.href=window.location.href">Send Request</button>
+            </div>
+            </div>
+
+            <a class="modal__close" id="close-modal">&times;</a>
+        </div>
+    </div>
+
     <section class="drop-us" id="contacts">
         <div class="drop-us__container">
             <div class="drop-us__bg-image-two"></div>
