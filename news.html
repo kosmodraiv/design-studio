@@ -60,6 +60,20 @@
                     <li><a class="menu__name" href="./news.html">Blog</a></li>
                     <li><a class="menu__name" href="./contacts.html">Contacts</a></li>
                     <a id="demo-modal-burg" ><li class="burger__send"><p>Send Request</p></li></a>
+                    <div class="burger__select">
+                        <div class="main-screen__select_container">
+                            <div class="main-screen__select-span"></div>
+                            <select name="select"> <!--Supplement an id here instead of using 'name'-->
+                                <option value="value1">Kiev</option>
+                                <option value="value2" selected>Lviv</option>
+                                <option value="value3">Kharkiv</option>
+                              </select>
+                        </div>
+                        <div class="main-screen__contact_phone-mail">
+                            <a href="" class="social-phone">+380983527547</a>
+                            <a href="" class="social-email">info@gmail.com</a>
+                        </div>
+                    </div>
                 </ul>
             </nav>
         </div>
@@ -255,7 +269,7 @@
     </div>
     </section>
 
-    <footer>
+    <!-- <footer>
         <div class="container">
         
         <div class="footer__content">
@@ -279,6 +293,30 @@
             </div>
         </div>
         </div>
+    </footer> -->
+
+
+    <footer class="footer__news">
+        <div class="container">
+            <div class="footer__news-content">
+                <div class="footer__news-content__left">
+                    <h1>Lorem ipsum dolor sit<br> amet, consectetur<br> adipiscing elit. </h1>
+                    <h3>© Copyright 2018. All rights reserved</h3>
+                </div>
+                <div class="footer__news-content__right">
+                    <div class="footer__news__right-text">
+                    <h2>Lorem ipsum dolor sit amet, consectetur adipiscing<br> elit. Aliquam ullamcorper eu mauris vitae posuere.<br> Ut at luctus ligula. Nunc ante felis, aliquam.</h2>
+                    <div class="form__group field">
+                        <input type="input" class="form__field" placeholder="Name" name="name" id='name' required />
+                        <label for="name" class="form__label">E-mail</label>
+                        <h3>Made with love in</h3>
+                      </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+
     </footer>
 
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
