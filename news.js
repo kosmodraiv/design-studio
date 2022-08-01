@@ -1,4 +1,4 @@
-$(".select").click(function() {
+$(".select__tabs").click(function() {
     var is_open = $(this).hasClass("open");
     if (is_open) {
       $(this).removeClass("open");
@@ -7,12 +7,12 @@ $(".select").click(function() {
     }
   });
   
-  $(".select li").click(function() {
+  $(".select__tabs li").click(function() {
   
     var selected_value = $(this).html();
-    var first_li = $(".select li:first-child").html();
+    var first_li = $(".select__tabs li:first-child").html();
   
-    $(".select li:first-child").html(selected_value);
+    $(".select__tabs li:first-child").html(selected_value);
     $(this).html(first_li);
   
   });
@@ -20,7 +20,7 @@ $(".select").click(function() {
   $(document).mouseup(function(event) {
   
     var target = event.target;
-    var select = $(".select");
+    var select = $(".select__tabs");
   
     if (!select.is(target) && select.has(target).length === 0) {
       select.removeClass("open");

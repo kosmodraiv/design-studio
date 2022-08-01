@@ -9,16 +9,24 @@ $('.overflow').hide();
 $('#burg').on('click', function(){
   $('.mobile-tab').slideToggle();
   $('.blure').slideToggle();
-  $(this).closest('body').toggleClass('active')
+  $(this).closest('body').toggleClass('active');
 })
 
 
 $('#demo-modal').on('click', function(){
     $('.modal__content').slideToggle();
     $('.blure-modal').slideToggle();
-    $(this).closest('body').toggleClass('active')
+    $(this).closest('body').toggleClass('active');
     $('header').hide();
 })
+
+$('#demo-modal-burg').on('click', function(){
+    $('.modal__content').slideToggle();
+    $('.blure-modal').slideToggle();
+    $(this).closest('body').toggleClass('active');
+    $('header').hide();
+})
+
 
 $('#close-modal').on('click', function(){
     $('.modal__content').hide();
@@ -32,6 +40,11 @@ $('#blure-close').on('click', function(){
     $('.blure-modal').hide();
     $(this).closest('body').removeClass('active');
     $('header').show();
+})
+
+$('#blure').on('click', function(){
+    $('.modal__content').hide();
+    $('.blure-modal').hide();
 })
 
 

@@ -54,11 +54,12 @@
         <div class="mobile-tab">
             <nav class="header__mobile">
                 <ul>
-                    <li><a class="menu__name">Home</a></li>
-                    <li><a class="menu__name">Projects</a></li>
-                    <li><a class="menu__name">Abous us</a></li>
+                    <li><a class="menu__name" href="./index.html">Home</a></li>
+                    <li><a class="menu__name" href="./project.html">Projects</a></li>
+                    <li><a class="menu__name" href="./about.html">Abous us</a></li>
                     <li><a class="menu__name" href="./news.html">Blog</a></li>
-                    <li><a class="menu__name" href="#contacts">Contacts</a></li>
+                    <li><a class="menu__name" href="./contacts.html">Contacts</a></li>
+                    <a id="demo-modal-burg" ><li class="burger__send"><p>Send Request</p></li></a>
                 </ul>
             </nav>
         </div>
@@ -74,6 +75,7 @@
         </div>
     </header>
 
+    <section class="blure"></section>
     <section class="blure-modal" id="blure-close"></section>
     <div id="demo-modal" class="modal">
         <div class="modal__content">
@@ -175,6 +177,15 @@
                         <li data-tab="#tab-1" class="tabs__nav-btn tabs__text"><p>News</p></li>
                         <li data-tab="#tab-2" class="tabs__nav-btn tabs__text"><p>Advise from the designer</p></li>
                     </ul>
+
+                    <ol class="select__tabs">
+  
+                        <li data-tab="#tab-1" class="tabs__nav-btn">All</li>
+                        <li data-tab="#tab-2" class="tabs__nav-btn">Blog</li>
+                        <li data-tab="#tab-1" class="tabs__nav-btn">News</li>
+                        <li data-tab="#tab-2" class="tabs__nav-btn">Advise from the designer</li>
+                        
+                      </ol>
                 </div>
             </div>
         </div>
@@ -246,8 +257,9 @@
 
     <footer>
         <div class="container">
-        <div class="footer-img"><img src="./images/news/footer.jpg" alt=""></div>
+        
         <div class="footer__content">
+            <div class="footer-img"><img src="./images/news/footer.jpg" alt=""></div>
             <div class="footer__content-left">
                 <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h1>
                 <p>© Copyright 2018. All rights reserved</p>
