@@ -23,8 +23,9 @@ $('#demo-modal').on('click', function(){
 $('#demo-modal-burg').on('click', function(){
     $('.modal__content').slideToggle();
     $('.blure-modal').slideToggle();
-    $(this).closest('body').toggleClass('active');
     $('header').hide();
+    $('.mobile-tab').hide();
+    $('.blure').hide();
 })
 
 
@@ -42,10 +43,6 @@ $('#blure-close').on('click', function(){
     $('header').show();
 })
 
-$('#blure').on('click', function(){
-    $('.modal__content').hide();
-    $('.blure-modal').hide();
-})
 
 
 /// загрузка-страницы
